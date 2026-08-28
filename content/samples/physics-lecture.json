@@ -1,0 +1,16 @@
+{
+  "metadata": {"class":"10","subject":"physics","unit":"10 - Thermal Properties of Matter","lecture":5,"title":"Evaporation","lmsScope":"Evaporation - complete topic","textbookPages":"13-15"},
+  "introduction":"A wet floor dries without boiling. Evaporation explains how energetic surface molecules escape as vapour.",
+  "slos":["Define evaporation at particle level.","Explain why evaporation occurs at a liquid surface.","Describe factors affecting evaporation.","Explain cooling caused by evaporation."],
+  "previousKnowledge":"Adding or removing energy changes molecular motion and may change the physical state of matter.",
+  "slides":[
+    {"type":"concept","title":"Evaporation is a surface process","lead":"Some surface molecules have enough energy to escape into the air as vapour.","bullets":["Occurs at all temperatures","Becomes faster at higher temperature","Does not require the whole liquid to boil"]},
+    {"type":"comparison","title":"What changes the rate?","columns":[{"title":"Faster","items":["Higher temperature","Larger surface","Faster air movement","Drier air"]},{"title":"Slower","items":["Lower temperature","Smaller surface","Still air","High humidity"]}]},
+    {"type":"process","title":"Why evaporation causes cooling","bullets":["Higher-energy molecules escape","They carry thermal energy away","Lower-energy molecules remain","The liquid temperature falls"]},
+    {"type":"quick-check","title":"Quick check","bullets":["Why does wind speed up evaporation?","Why does sweating cool the body?"],"answer":"Wind removes vapour from the surface; evaporating sweat carries heat away."}
+  ],
+  "recap":["Evaporation occurs at the liquid surface.","Its rate depends on environmental and liquid factors.","Escaping energetic molecules produce cooling."],
+  "reviewQuestions":["Define evaporation.","Explain the effect of humidity.","Why does water evaporate faster from a wide dish?"],
+  "nextLectureBridge":"The next lecture applies evaporation and condensation to refrigeration and introduces latent heat."
+}
+

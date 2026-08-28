@@ -1,0 +1,23 @@
+{
+  "name": "ugi-education-slide-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-subject textbook-aligned PowerPoint generator for UGI",
+  "scripts": {
+    "build:sample": "node scripts/generate-deck.mjs --input content/samples/physics-lecture.json --output output/sample-physics-lecture.pptx",
+    "generate": "node scripts/generate-deck.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "render": "bash scripts/render-deck.sh",
+    "qa": "bash scripts/qa-deck.sh",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "pptxgenjs": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

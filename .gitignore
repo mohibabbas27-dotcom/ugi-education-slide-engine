@@ -1,0 +1,14 @@
+node_modules/
+output/*
+!output/.gitkeep
+qa/rendered/
+qa/contact-sheets/
+qa/*.png
+tmp/
+sources/*.pdf
+sources/*.docx
+sources/*.pptx
+sources/*.png
+sources/*.jpg
+*.log
+.DS_Store

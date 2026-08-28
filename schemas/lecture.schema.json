@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UGI Lecture",
+  "type": "object",
+  "required": ["metadata", "introduction", "slos", "slides", "recap", "reviewQuestions"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["class", "subject", "unit", "lecture", "title", "lmsScope", "textbookPages"],
+      "properties": {
+        "class": {"type": "string"}, "subject": {"type": "string"}, "unit": {"type": "string"},
+        "lecture": {"type": "integer", "minimum": 1}, "title": {"type": "string", "minLength": 3},
+        "lmsScope": {"type": "string"}, "textbookPages": {"type": "string"}
+      }
+    },
+    "introduction": {"type": "string", "minLength": 10},
+    "slos": {"type": "array", "minItems": 3, "maxItems": 6, "items": {"type": "string"}},
+    "previousKnowledge": {"type": "string"},
+    "slides": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "required": ["type", "title"],
+        "properties": {
+          "type": {"enum": ["concept", "comparison", "process", "formula", "worked-example", "visual", "quick-check"]},
+          "title": {"type": "string"}, "lead": {"type": "string"},
+          "bullets": {"type": "array", "items": {"type": "string"}},
+          "columns": {"type": "array"}, "answer": {"type": "string"}
+        }
+      }
+    },
+    "recap": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "reviewQuestions": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "nextLectureBridge": {"type": "string"}
+  }
+}
+
